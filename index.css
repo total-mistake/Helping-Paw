@@ -2360,6 +2360,10 @@
   .home-button15 {
     width: 100%;
   }
+  .home-checkbox1 {
+    width: 1em;
+    height: 1em;
+  }
   .home-footer {
     padding-top: var(--dl-space-space-threeunits);
   }
