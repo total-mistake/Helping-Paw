@@ -1,0 +1,24 @@
+.branding-branding {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+.branding-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+.branding-company-name {
+  color: var(--dl-color-gray-100);
+  align-self: center;
+  font-style: normal;
+}
+
+
+@media(max-width: 767px) {
+  .branding-company-name {
+    font-size: 21px;
+    line-height: 32px;
+  }
+}
