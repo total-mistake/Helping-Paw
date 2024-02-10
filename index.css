@@ -1481,7 +1481,7 @@
   border-width: 1px;
   flex-direction: row;
   justify-content: center;
-  background-color: var(--dl-color-gray-dark);
+  background-color: var(--dl-color-success-300);
 }
 .home-icon18 {
   width: 10px;
