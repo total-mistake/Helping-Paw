@@ -38,10 +38,8 @@
   padding: 0.5rem 1rem;
   transition: 0.3s;
   padding-top: var(--dl-space-space-oneandhalfunits);
-  border-color: #222223;
   border-width: 1px;
   padding-left: var(--dl-space-space-twounits);
-  border-radius: 0px;
   padding-right: var(--dl-space-space-twounits);
   padding-bottom: var(--dl-space-space-oneandhalfunits);
   background-color: rgb(121, 212, 144);

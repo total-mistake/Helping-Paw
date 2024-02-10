@@ -476,7 +476,7 @@
 .home-buttons {
   gap: var(--dl-space-space-sixunits);
   width: 100%;
-  height: 20%;
+  height: auto;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -484,8 +484,9 @@
 }
 .home-link08 {
   width: 40%;
-  height: 20%;
-  min-height: 15%;
+  height: auto;
+  padding: var(--dl-space-space-unit);
+  min-height: auto;
   border-color: var(--dl-color-gray-100);
   text-decoration: none;
   background-color: transparent;
@@ -496,8 +497,9 @@
 .home-link09 {
   color: #F6F5ED;
   width: 40%;
-  height: 20%;
-  min-height: 15%;
+  height: auto;
+  padding: var(--dl-space-space-unit);
+  min-height: auto;
   border-color: var(--dl-color-gray-100);
   text-decoration: none;
   background-color: var(--dl-color-gray-100);
@@ -1731,12 +1733,12 @@
     flex-direction: row;
   }
   .home-link08 {
-    padding-top: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-unit);
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
   .home-link09 {
-    padding-top: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-unit);
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
   .home-container02 {
     width: 100%;
@@ -2079,10 +2081,14 @@
   }
   .home-link08 {
     min-width: var(--dl-size-size-xsmall);
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .home-link09 {
     display: flex;
     min-width: var(--dl-size-size-xsmall);
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .home-image {
     height: 236px;
