@@ -520,7 +520,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
 }
 .home-button1 {
-  color: var(--dl-color-gray-dark);
+  color: var(--dl-color-gray-100);
   font-style: normal;
   border-color: var(--dl-color-gray-100);
   background-color: transparent;
@@ -1192,6 +1192,9 @@
   }
   .home-links {
     display: none;
+  }
+  .home-button {
+    background-color: transparent;
   }
   .home-buttons {
     gap: 1em;
