@@ -2,11 +2,12 @@
   gap: var(--dl-space-space-halfunit);
   display: flex;
   position: relative;
+  align-items: center;
   flex-direction: row;
 }
 .branding-logo {
-  width: 60px;
-  height: 60px;
+  width: 2.3em;
+  height: 2.3em;
   object-fit: cover;
 }
 .branding-company-name {

@@ -109,11 +109,12 @@
   gap: var(--dl-space-space-halfunit);
   display: flex;
   position: relative;
+  align-items: center;
   flex-direction: row;
 }
 .branding-logo {
-  width: 60px;
-  height: 60px;
+  width: 2.3em;
+  height: 2.3em;
   object-fit: cover;
 }
 .branding-company-name {
@@ -296,10 +297,11 @@
   border-color: var(--dl-color-gray-100);
   background-color: transparent;
 }
-.home-button1 {
+.home-link09 {
   color: rgb(255, 255, 255);
   width: 50%;
   border-color: var(--dl-color-gray-100);
+  text-decoration: none;
   background-color: rgb(0, 0, 0);
 }
 .home-image {
@@ -461,8 +463,6 @@
   min-width: 360px;
   align-items: center;
   padding-top: var(--dl-space-space-twounits);
-  border-color: var(--dl-color-gray-dark);
-  border-width: 0.1em;
   padding-left: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
   flex-direction: column;
@@ -519,7 +519,7 @@
   flex-direction: column;
   padding-bottom: var(--dl-space-space-halfunit);
 }
-.home-button2 {
+.home-button1 {
   color: var(--dl-color-gray-dark);
   font-style: normal;
   border-color: var(--dl-color-gray-100);
@@ -537,17 +537,17 @@
   align-items: center;
   justify-content: center;
 }
+.home-button2 {
+  color: rgb(255, 255, 255);
+  width: 50%;
+  background-color: rgb(0, 0, 0);
+}
 .home-button3 {
   color: rgb(255, 255, 255);
   width: 50%;
   background-color: rgb(0, 0, 0);
 }
 .home-button4 {
-  color: rgb(255, 255, 255);
-  width: 50%;
-  background-color: rgb(0, 0, 0);
-}
-.home-button5 {
   color: rgb(255, 255, 255);
   width: 50%;
   background-color: rgb(0, 0, 0);
@@ -902,7 +902,7 @@
 .home-textinput {
   color: #222223;
 }
-.home-button6 {
+.home-button5 {
   color: var(--dl-color-gray-white);
   padding-top: 0.8em;
   padding-bottom: 0.8em;
@@ -1088,18 +1088,18 @@
   align-items: center;
   flex-direction: row;
 }
-.home-link09 {
-  color: var(--dl-color-gray-100);
-}
 .home-link10 {
   color: var(--dl-color-gray-100);
-  text-decoration: none;
 }
 .home-link11 {
   color: var(--dl-color-gray-100);
   text-decoration: none;
 }
 .home-link12 {
+  color: var(--dl-color-gray-100);
+  text-decoration: none;
+}
+.home-link13 {
   color: var(--dl-color-gray-100);
   text-decoration: none;
 }
@@ -1173,6 +1173,9 @@
   .home-row {
     width: 80%;
   }
+  .home-cards {
+    gap: 3em;
+  }
 }
 @media(max-width: 991px) {
   .home-container {
@@ -1237,6 +1240,7 @@
     padding-bottom: var(--dl-space-space-sixunits);
   }
   .home-container06 {
+    gap: 2em;
     padding-left: 1em;
     padding-right: 2em;
   }
@@ -1255,7 +1259,7 @@
   .home-textinput {
     flex: 1;
   }
-  .home-button6 {
+  .home-button5 {
     width: 30%;
   }
   .home-slider {
@@ -1316,7 +1320,7 @@
   .home-link08 {
     width: 50%;
   }
-  .home-button1 {
+  .home-link09 {
     width: 50%;
   }
   .home-image {
@@ -1337,6 +1341,13 @@
   .home-container03 {
     min-width: 100%;
     align-self: center;
+  }
+  .home-headers {
+    gap: 1.5em;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
   }
   .home-details {
     gap: var(--dl-space-space-twounits);
@@ -1398,13 +1409,13 @@
   .home-row {
     gap: 0.5em;
   }
+  .home-button2 {
+    width: 100%;
+  }
   .home-button3 {
     width: 100%;
   }
   .home-button4 {
-    width: 100%;
-  }
-  .home-button5 {
     width: 100%;
   }
   .home-donation-use {
@@ -1418,6 +1429,12 @@
   }
   .home-accordion {
     width: 100%;
+  }
+  .home-cards {
+    gap: 1em;
+  }
+  .home-container06 {
+    gap: 1em;
   }
   .home-container07 {
     padding: 0.5em;
@@ -1460,6 +1477,7 @@
     padding-top: var(--dl-space-space-threeunits);
   }
   .home-headers {
+    padding: 0.5em;
     align-items: center;
   }
   .home-details {
@@ -1491,7 +1509,7 @@
     padding-top: var(--dl-space-space-threeunits);
     padding-bottom: var(--dl-space-space-threeunits);
   }
-  .home-button2 {
+  .home-button1 {
     color: var(--dl-color-gray-100);
   }
   .home-caption1 {
@@ -1544,6 +1562,9 @@
   .home-text14 {
     line-height: 24px;
   }
+  .home-container06 {
+    gap: 0.5em;
+  }
   .home-content5 {
     padding-top: var(--dl-space-space-threeunits);
     padding-bottom: var(--dl-space-space-threeunits);
@@ -1558,7 +1579,7 @@
     width: 100%;
     text-align: center;
   }
-  .home-button6 {
+  .home-button5 {
     width: 100%;
   }
   .home-checkbox1 {
