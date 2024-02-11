@@ -17,9 +17,3 @@
 }
 
 
-@media(max-width: 767px) {
-  .branding-company-name {
-    font-size: 21px;
-    line-height: 32px;
-  }
-}
