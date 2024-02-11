@@ -35,14 +35,12 @@
   color: rgb(34, 34, 35);
   cursor: pointer;
   display: inline-block;
-  padding: 0.5rem 1rem;
-  transition: 0.3s;
-  padding-top: var(--dl-space-space-oneandhalfunits);
+  padding-top: 1em;
   border-width: 1px;
-  padding-left: var(--dl-space-space-twounits);
-  padding-right: var(--dl-space-space-twounits);
-  padding-bottom: var(--dl-space-space-oneandhalfunits);
-  background-color: rgb(121, 212, 144);
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  background-color: var(--dl-color-gray-100);
 }
 .button:hover {
   opacity: 0.5;
@@ -50,7 +48,7 @@
 .input {
   color: var(--dl-color-gray-dark);
   cursor: auto;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 1rem;
   border-color: var(--dl-color-gray-dark);
   border-width: 1px;
   background-color: var(--dl-color-gray-white);
@@ -173,6 +171,19 @@
 .slide-active {
   display: flex;
 }
+.pet_icon {
+  gap: 0.5em;
+  cursor: pointer;
+  display: flex;
+  padding: 0.7em;
+  background: white;
+  align-items: center;
+  border-radius: 20%;
+  flex-direction: column;
+}
+.pet_icon:hover {
+  transform: scale(0.9);
+}
 .Subheading {
   font-size: 1.5em;
   font-family: "Lora";
@@ -220,13 +231,6 @@
   text-transform: none;
   text-decoration: none;
 }
-@media(max-width: 991px) {
-  .button {
-    width: 100%;
-    text-align: center;
-    padding-left: var(--dl-space-space-oneandhalfunits);
-    padding-right: var(--dl-space-space-oneandhalfunits);
-  }
-}
+
 
 
