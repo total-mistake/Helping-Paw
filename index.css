@@ -673,11 +673,11 @@
 }
 .home-container06 {
   gap: 3em;
-  flex: 0 0 auto;
+  flex: 1;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   padding-top: 2em;
   padding-left: 4em;
   padding-right: 4em;
@@ -702,6 +702,9 @@
   font-size: 2em;
   font-family: "Nunito";
 }
+.home-text33 {
+  text-align: center;
+}
 .home-container08 {
   gap: 1em;
   flex: 0 0 auto;
@@ -719,6 +722,9 @@
   font-size: 2em;
   font-family: "Nunito";
 }
+.home-text35 {
+  text-align: center;
+}
 .home-container09 {
   gap: 1em;
   flex: 0 0 auto;
@@ -735,6 +741,9 @@
 .home-text36 {
   font-size: 2em;
   font-family: "Nunito";
+}
+.home-text37 {
+  text-align: center;
 }
 .home-updates {
   width: 100%;
@@ -1493,10 +1502,6 @@
   }
   .home-container06 {
     gap: 0.5em;
-  }
-  .home-container09 {
-    flex: 0 0 auto;
-    height: auto;
   }
   .home-content5 {
     padding-top: var(--dl-space-space-threeunits);
