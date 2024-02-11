@@ -1237,6 +1237,10 @@
     padding-top: var(--dl-space-space-sixunits);
     padding-bottom: var(--dl-space-space-sixunits);
   }
+  .home-container06 {
+    padding-left: 1em;
+    padding-right: 2em;
+  }
   .home-content5 {
     align-items: flex-start;
     padding-top: var(--dl-space-space-sixunits);
@@ -1415,6 +1419,15 @@
   }
   .home-accordion {
     width: 100%;
+  }
+  .home-container07 {
+    padding: 0.5em;
+  }
+  .home-container08 {
+    padding: 0.5em;
+  }
+  .home-container09 {
+    padding: 0.5em;
   }
   .home-content5 {
     padding-left: var(--dl-space-space-oneandhalfunits);
