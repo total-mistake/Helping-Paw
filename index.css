@@ -1082,6 +1082,9 @@
     gap: var(--dl-space-space-threeunits);
     height: 554px;
   }
+  .home-content {
+    gap: 2.5em;
+  }
   .home-navbar-interactive {
     justify-content: space-between;
   }
@@ -1363,7 +1366,7 @@
     font-size: 14px;
   }
   .home-content {
-    gap: var(--dl-space-space-threeunits);
+    gap: 1em;
   }
   .home-navbar-interactive {
     padding: var(--dl-space-space-unit);
