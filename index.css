@@ -73,7 +73,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  padding-top: var(--dl-space-space-oneandhalfunits);
+  padding-top: 1.3em;
   flex-direction: column;
 }
 .home-navbar-interactive {
@@ -1084,6 +1084,7 @@
   }
   .home-content {
     gap: 2.5em;
+    padding-top: 1em;
   }
   .home-navbar-interactive {
     justify-content: space-between;
@@ -1367,6 +1368,7 @@
   }
   .home-content {
     gap: 1em;
+    padding-top: 0.5em;
   }
   .home-navbar-interactive {
     padding: var(--dl-space-space-unit);
