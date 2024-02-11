@@ -557,7 +557,7 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
-  align-items: center;
+  align-items: stretch;
   padding-top: 2em;
   padding-left: 1em;
   padding-right: 1em;
@@ -1324,6 +1324,10 @@
   }
   .home-accordion {
     width: 100%;
+  }
+  .home-pets {
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .home-cards {
     gap: 1em;
