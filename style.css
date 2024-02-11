@@ -173,10 +173,13 @@
 }
 .pet_icon {
   gap: 0.5em;
+  width: 27%;
   cursor: pointer;
+  height: 150%;
   display: flex;
   padding: 0.7em;
   background: white;
+  transition: transform 0.3s ease;
   align-items: center;
   border-radius: 20%;
   flex-direction: column;
