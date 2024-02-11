@@ -181,7 +181,7 @@
   background: white;
   transition: transform 0.3s ease;
   align-items: center;
-  border-radius: 20%;
+  border-radius: 15%;
   flex-direction: column;
 }
 .pet_icon:hover {
