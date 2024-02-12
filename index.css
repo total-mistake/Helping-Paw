@@ -227,9 +227,12 @@
   width: 100%;
   height: auto;
   display: flex;
-  padding: var(--dl-space-space-fourunits);
   align-items: center;
+  padding-top: 0px;
+  padding-left: var(--dl-space-space-fourunits);
+  padding-right: var(--dl-space-space-fourunits);
   flex-direction: row;
+  padding-bottom: var(--dl-space-space-fourunits);
   justify-content: center;
   background-color: var(--dl-color-primary-600);
 }
@@ -1058,7 +1061,10 @@
     background-position: center;
   }
   .home-container02 {
-    padding: var(--dl-space-space-twounits);
+    padding-top: 0px;
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    padding-bottom: var(--dl-space-space-twounits);
   }
   .home-container03 {
     min-width: var(--dl-size-size-xlarge);
