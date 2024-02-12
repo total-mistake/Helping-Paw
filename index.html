@@ -107,7 +107,7 @@
                   </div>
                 </div>
                 <div data-thq="thq-burger-menu" class="home-burger-menu">
-                  <button class="button home-button">
+                  <button class="home-button">
                     <svg viewBox="0 0 1024 1024" class="home-icon">
                       <path
                         d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
@@ -410,49 +410,6 @@
               </div>
             </div>
             <div>
-              <div class="home-container05">
-                <script>
-                   accordionContents.forEach((accordionContent) => {
-                       accordionContent.style.display = 'none'; //Hides all accordion contents
-                   });
-
-                   accordionIconsClosed.forEach((icon) => {
-                     icon.style.display = 'flex'
-                   })
-
-                   accordionIconsOpen.forEach((icon) => {
-                     icon.style.display = 'none'
-                   })
-
-                   accordionContainers.forEach((accordionContainer, index) => {
-                       accordionContainer.addEventListener('click', () => {
-                           if (accordionContents[index].style.display === 'flex') {
-                               // If the accordion is already open, close it
-                               accordionContents[index].style.display = 'none';
-                               accordionIconsClosed[index].style.display = 'flex';
-                               accordionIconsOpen[index].style.display = 'none'
-                           } else {
-                               // If the accordion is closed, open it
-                               accordionContents.forEach((accordionContent) => {
-                                   accordionContent.style.display = 'none'; //Hides all accordion contents
-                               });
-
-                               accordionIconsClosed.forEach((accordionIcon) => {
-                                   accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
-                               });
-
-                               accordionIconsOpen.forEach((accordionIcon) => {
-                                 accordionIcon.style.display = 'none';
-                               })
-
-                               accordionContents[index].style.display = 'flex'; // Shows accordion content
-                               accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
-                               accordionIconsOpen[index].style.display = 'flex';
-                           }
-                       });
-                   });
-                </script>
-              </div>
             </div>
           </div>
         </section>
@@ -586,31 +543,6 @@
                       Конфиденциальности
                     </label>
                   </div>
-                  <div>
-                    <div class="home-container11">
-                      <script>
-                        // Create a boolean to represent the state of the toggle
-                        let tosToggle = false;
-
-                        // Add event listeners to the divs and labels
-                        document.getElementById('tos').addEventListener('click', toggleTos);
-                        document.getElementById('tos-active').addEventListener('click', toggleTos);
-                        document.querySelectorAll('label[for=tos]').forEach(label => label.addEventListener('click', toggleTos));
-
-                        // Define the toggleTos function to hide/show the elements based on the state of the toggle
-                        function toggleTos() {
-                          if (tosToggle) {
-                            document.getElementById('tos').style.display = 'flex';
-                            document.getElementById('tos-active').style.display = 'none';
-                          } else {
-                            document.getElementById('tos').style.display = 'none';
-                            document.getElementById('tos-active').style.display = 'flex';
-                          }
-                          tosToggle = !tosToggle;
-                        }
-                      </script>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -679,5 +611,9 @@
         </a>
       </div>
     </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
   </body>
 </html>
