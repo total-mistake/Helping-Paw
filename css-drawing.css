@@ -6,3 +6,237 @@
   align-items: center;
   flex-direction: column;
 }
+
+.piture {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.figures {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  position: relative;
+}
+
+.table_top {
+width: 40%;
+height: 5%;
+background-color: #d3732f;
+position: absolute;
+top:47%;
+left: 29% ;
+}
+
+.top_of_leg {
+width: 8%;
+height: 20%;
+border-radius: 50%;
+background-color: #d3732f;
+position: absolute;
+top: 49%;
+left: 44.5% ;
+}
+
+.bot_of_leg {
+width: 0;
+height: 12%;
+border-left: 15px solid transparent ;
+border-right: 15px solid transparent ;
+border-bottom: 30px solid #d3732f;
+position: absolute;
+top:50%;
+left: 41% ;
+}
+
+.top_handle{
+width: 5%;
+height: 5%;
+border-radius: 50%;
+background-color: #e31e44;
+position: absolute;
+top:23.5%;
+left: 45% ;
+}
+
+.lid {
+width: 12.5%;
+height: 10%;
+border-radius: 50%;
+background: radial-gradient(circle at 42% 38%, white 2% ,#e31e44 80%);
+position: absolute;
+top:25.5%;
+left: 41.25% ;
+}
+
+.body {
+width: 22.5%;
+height: 17.5%;
+border-radius: 50%;
+background: radial-gradient(circle at 30% 40%, white ,#e31e44 80%);
+position: absolute;
+top:30%;
+left: 36.5% ;
+}
+
+.handle {
+width: 7.5%;
+height: 7.5%;
+border-radius: 50%;
+background-color: white;
+border: 3px solid #e31e44;
+position: absolute;
+top:32.5%;
+left: 54% ;
+}
+
+.spout {
+margin-left: 10%;
+width: 3.5%;
+height: 4.5%;
+transform: skew(55deg);
+background: #e31e44;
+position: absolute;
+top:32.5%;;
+left: 25.5%; ;
+}
+
+.chair_back {
+width: 15%;
+height: 50%;
+border-radius: 50%;
+background-color: #d3732f;
+position: absolute;
+top:25%;
+left: 3% ;
+}
+
+.back_overlap {
+width: 15%;
+height: 50%;
+border-radius: 50%;
+background-color: white;
+position: absolute;
+top:25%;
+left: 0% ;
+}
+
+.leg {
+width: 3%;
+height: 18.5%;
+background-color: #d3732f;
+position: absolute;
+top:57.5%;
+left: 27% ;
+}
+
+.seat {
+  width: 17.5%;
+  height: 4%;
+  background-color: #d3732f;
+  position: absolute;
+  top:57.5%;
+  left: 15% ;
+}
+
+.dot_1 {
+  width: 3%;
+  height: 2.5%;
+  border-radius: 50%;
+  background-color: #823600;
+  position: absolute;
+  top:58.25%;
+  left: 16% ;
+}
+
+.dot_2 {
+  width: 3%;
+  height: 2.5%;
+  border-radius: 50%;
+  background-color: #823600;
+  position: absolute;
+  top:58.25%;
+  left: 21.5% ;
+}
+
+.dot_3 {
+  width: 3%;
+  height: 2.5%;
+  border-radius: 50%;
+  background-color: #823600;
+  position: absolute;
+  top:58.25%;
+  left: 27% ;
+}
+
+.chair_2_back {
+
+  width: 15%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: #d3732fed;
+  position: absolute;
+  top:25%;
+  right: 3% ;
+}
+  
+.back_overlap_2 {
+  width: 15%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top:25%;
+  right: 0% ;
+}
+
+.leg_2 {
+width: 3%;
+height: 18.5%;
+background-color: #d3732fed;
+position: absolute;
+top:57.5%;
+right: 27% ;
+}
+
+.seat_2 {
+width: 17.5%;
+height: 4%;
+background-color: #d3732fed;
+position: absolute;
+top:57.5%;
+right: 15% ;
+}
+
+.dot_1_2 {
+width: 3%;
+height: 2.5%;
+border-radius: 50%;
+background-color: #823600;
+position: absolute;
+top:58.25%;
+right: 16% ;
+}
+
+.dot_2_2{
+width: 3%;
+height: 2.5%;
+border-radius: 50%;
+background-color: #823600;
+position: absolute;
+top:58.25%;
+right: 21.5% ;
+}
+
+.dot_3_2 {
+width: 3%;
+height: 2.5%;
+border-radius: 50%;
+background-color: #823600;
+position: absolute;
+top:58.25%;
+right: 27% ;
+}
+
