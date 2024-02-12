@@ -73,6 +73,10 @@
 }
 
 @media(max-width: 991px) {
+  .scroll-button-container {
+    right: 1em;
+    bottom: 1em;
+  }
   .scroll-button-button {
     width: 3em;
     height: 3em;
