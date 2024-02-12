@@ -90,51 +90,6 @@
 .navLink:hover {
   color: grey;
 }
-.number {
-  color: #000000;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  font-size: 32px;
-  align-items: center;
-  font-family: Lora;
-  font-weight: 500;
-  border-color: #000000;
-  border-width: 1px;
-  border-radius: var(--dl-radius-radius-round);
-  flex-direction: row;
-  justify-content: center;
-}
-.switch {
-  color: 222223;
-  cursor: pointer;
-  display: flex;
-  opacity: 0.5;
-  font-size: 20px;
-  transition: 0.3s;
-  align-items: center;
-  font-family: Lora;
-  font-weight: 500;
-  line-height: 26px;
-  padding-top: 12px;
-  border-color: transparent;
-  border-width: 1px;
-  padding-left: 20px;
-  border-radius: 30px;
-  padding-right: 20px;
-  flex-direction: column;
-  padding-bottom: 12px;
-  justify-content: center;
-  background-color: transparent;
-}
-.switch:hover {
-  opacity: 1;
-}
-.switch-active {
-  opacity: 1;
-  border-color: #222223;
-  background-color: #F6F5ED;
-}
 .accordion-element {
   gap: var(--dl-space-space-unit);
   width: 100%;
@@ -148,11 +103,6 @@
   padding-bottom: var(--dl-space-space-oneandhalfunits);
   justify-content: center;
   border-bottom-width: 1px;
-}
-.accordion-active {
-  height: 100%;
-  display: block;
-  max-height: 1000px;
 }
 .accordion-content {
   width: 100%;
