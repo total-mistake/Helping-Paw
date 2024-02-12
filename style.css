@@ -110,17 +110,6 @@
   overflow: hidden;
   transition: max-height 0.5s;
 }
-.slide {
-  gap: var(--dl-space-space-oneandhalfunits);
-  width: 100%;
-  display: none;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.slide-active {
-  display: flex;
-}
 .pet_icon {
   gap: 0.5em;
   width: 27%;
