@@ -1263,7 +1263,6 @@
   }
   .home-button {
     color: transparent;
-    width: 100%;
     padding: 1em;
     border-color: var(--dl-color-gray-100);
     background-color: transparent;
