@@ -5,6 +5,8 @@
   "dependencies": {
     "parcel-bundler": "^1.6.1"
   },
-  "scripts": {},
+  "scripts": {
+    "start": "parcel index.html"
+  },
   "devDependencies": {}
 }
