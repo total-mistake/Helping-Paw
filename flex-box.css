@@ -1,8 +1,141 @@
-.flex-box-container {
-  width: 100%;
-  display: flex;
-  overflow: auto;
-  min-height: 100vh;
-  align-items: center;
-  flex-direction: column;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
+body {
+    background-color: black; 
+    margin: 0; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh; 
+}
+
+.container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+svg {
+    width: 40%;
+    height: 40%;
+}
+
+.hidden-text {
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    opacity: 0;
+    font-style: italic;
+    left: 5%;
+    top: 1%;
+    font-size: 80%;
+}
+
+.E {
+    position: absolute;
+    left: 45%; 
+    top: 20%; 
+    z-index: 1;
+    fill: #8FC8F1;
+    stroke: black;
+    stroke-width: 1%;
+}
+
+.S {
+    position: absolute;
+    left: 20%; 
+    top: 35%; 
+    z-index: 2;
+    fill: black;
+    stroke: black; 
+    stroke-width: 1%;
+}
+
+.star {
+    position: absolute;
+    width: 13%;
+    height: 13%;
+    z-index: 3;
+    left: 20%; 
+    top: 58%;
+    fill: white;
+    stroke: black;
+    stroke-width: 2%;
+    opacity: 0;
+}
+
+@keyframes star {
+    20%{
+        opacity: 1;
+    }
+    30% {
+        left: 30%;
+        top: 65%;
+    }
+    40%{
+        left: 40%;
+        top: 60%;
+    }
+    50% {
+        left: 45%;
+        top: 50%;
+    }
+    60% {
+        left: 30%;
+        top: 45%;
+    }
+    70% {
+        left: 25%;
+        top: 35%;
+    }
+    80% {
+        left: 40%;
+        top: 30%;
+        opacity: 1;
+    }
+    90% {
+        
+    }
+    100% {
+        left: 45%;
+        top: 37%;
+        opacity: 0;
+    }
+}
+
+@keyframes last-state {
+    80% {
+        top: 0;
+    }
+    90% {
+        top: 1%;
+    }
+    100% {
+        top: -1%;
+    }
+}
+
+.container:hover .star {
+    animation: star 4s linear infinite alternate;
+}
+
+.container:hover {
+    animation: last-state 4s linear infinite;
+}
+
+.container:active .star {
+    fill: #FFB800;
+}
+
+.container:active .hidden-text {
+    opacity: 1;
+}
+
+.container:active {
+    background-image: url('public/background.png');
+    background-size: cover;
 }
