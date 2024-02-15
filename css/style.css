@@ -126,7 +126,7 @@
 .pet_icon:hover {
   transform: scale(0.9);
 }
-.answer-box {
+/* .answer-box {
   cursor: pointer;
   display: flex;
   padding: 0.3em;
@@ -141,7 +141,8 @@
 }
 .answer-box:active {
   transform: scale(1.3);
-}
+} */
+
 .Subheading {
   font-size: 1.4em;
   font-family: "Lora";
