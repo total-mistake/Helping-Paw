@@ -136,6 +136,6 @@ svg {
 }
 
 .container:active {
-    background-image: url('public/background.png');
+    background-image: url('/public/background.png');
     background-size: cover;
 }
