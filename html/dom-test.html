@@ -79,7 +79,55 @@
     <div>
       <link href="/css/dom-test.css" rel="stylesheet" />
 
-      <div class="dom-test-container">
+      <main class="main">
+        <!-- Предупреждение -->
+        <div class="warning hidden Subheading">
+            В тесте нет вопросов, <br> заполните файл с вопросами!
+        </div>
+
+        <!-- Тест -->
+        <div class="quiz">
+            <h2 class="quiz__header Subheading">Тест на знание слэнга</h2>
+            <div class="quiz__progress">
+                <div class="quiz__progress-inner"></div>
+            </div>
+            <div class="quiz__content">
+                <h3 class="quiz__title Content">
+                    <!-- Задаем значение в JavaScript -->
+                    Вопрос 1
+                </h3>
+                <ul class="quiz__list">
+                    <!-- Задаем значение в JavaScript -->
+                    <li class="quiz__option Menu">Ответ 1</li>
+                    <li class="quiz__option Menu">Ответ 2</li>
+                    <li class="quiz__option Menu">Ответ 3</li>
+                </ul>
+            </div>
+            <div class="quiz__footer">
+                <div class="quiz__total Menu">
+                    <!-- Задаем значение в JavaScript -->
+                    1 из 4
+                </div>
+                <button class="quiz__next-btn Menu">Следующий</button>
+            </div>
+        </div>
+
+        <!-- Выводим результаты теста -->
+        <div class="result hidden">
+            <div class="result__img">
+                <!-- <img src="./img/the-end.png" alt="The end"> -->
+            </div>
+            <div class="result__title">Вы завершили тест!</div>
+            <div class="result__text">
+                <!-- Задаем значение в JavaScript -->
+            </div>
+            <div class="result__btn">
+                <a class="result__restart" href="/">Начать заново</a>
+            </div>
+        </div>
+    </main>
+
+      <!-- <div class="dom-test-container">
         <div class="dom-test-container1">
           <h1 class="dom-test-text Header">Dom-Тест</h1>
           <div class="dom-test-test">
@@ -102,7 +150,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <script
       data-section-id="navbar"
