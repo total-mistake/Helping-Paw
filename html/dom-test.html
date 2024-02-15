@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>CSS-Drawing - Helping Paw</title>
-    <meta property="og:title" content="CSS-Drawing - Helping Paw" />
+    <title>DOM-Test - Helping Paw</title>
+    <meta property="og:title" content="DOM-Test - Helping Paw" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -75,47 +75,40 @@
     <!-- <style> ... </style> -->
   </head>
   <body>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <div>
-      <link href="./css-drawing.css" rel="stylesheet" />
+      <link href="./css/dom-test.css" rel="stylesheet" />
 
-      <div class="css-drawing-container">
-        <div class ="picture" >
-          <div class="figures">
-          
-          <!--СТОЛ-->
-          <div class="table_top"></div>
-          <div class="top_of_leg"></div>     <!--верхняя часть ножки стола-->
-          <div class="bot_of_leg"></div>    <!--нижняя часть ножки стола-->
-
-          <!--ЧАЙНИК-->
-          <div class="top_handle"></div>  <!--ручка на крышке-->
-          <div class="lid"></div>         <!--крышка-->
-          <div class="handle"></div>      <!--ручка сбоку-->
-          <div class="spout"></div>       <!--носик-->
-          <div class="body"></div>        <!--корпус-->
-          
-          <!--ПЕРВЫЙ СТУЛ-->
-          <div class="chair_back"></div>  <!--спинка-->
-          <div class="back_overlap"></div><!--перекрытие спинки-->
-          <div class="leg"></div>         <!--передняя ножка стула-->
-          <div class="seat"></div>        <!--сидушка-->
-          <div class="dot_1"></div>       <!--рисунки точек на стуле-->
-          <div class="dot_2"></div>
-          <div class="dot_3"></div>
-
-          <!--ВТОРОЙ СТУЛ-->
-          <div class="chair_2_back"></div>
-          <div class="back_overlap_2"></div>
-          <div class="leg_2"></div>
-          <div class="seat_2"></div>
-          <div class="dot_1_2"></div>
-          <div class="dot_2_2"></div>
-          <div class="dot_3_2"></div>
-          
+      <div class="dom-test-container">
+        <div class="dom-test-container1">
+          <h1 class="dom-test-text Header">Dom-Тест</h1>
+          <div class="dom-test-test">
+            <div class="dom-test-question">
+              <span class="Content">Вопрос</span>
+            </div>
+            <div class="dom-test-answers">
+              <button type="button" class="dom-test-button Menu answer-box">
+                Button
+              </button>
+              <button type="button" class="dom-test-button1 Menu answer-box">
+                Button
+              </button>
+              <button type="button" class="dom-test-button2 Menu answer-box">
+                Button
+              </button>
+              <button type="button" class="dom-test-button3 Menu answer-box">
+                Button
+              </button>
+            </div>
           </div>
-      </div>
+        </div>
       </div>
     </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
