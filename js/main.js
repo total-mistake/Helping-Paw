@@ -10,7 +10,7 @@ let userScore = 0;
 const answersBar = $('.result__icons');
 answersBar.innerHTML = '';
 
-import questions from './questions.js';
+// import questions from './questions.js';
 
 //Проверка наличия вопросов в массиве
 if (typeof questions !== 'undefined' && questions.length > 0) {
