@@ -60,7 +60,7 @@ function createElement(str) {
 }
 
 function onParseText() {
-    let wordsAndNumbers = textInput.value.split(" - ");
+    let wordsAndNumbers = textInput.value.split("-");
     var words = wordsAndNumbers.filter(item => isNaN(item)).sort();
     var numbers = wordsAndNumbers.filter(item => !isNaN(item)).sort((a, b) => a - b);
     words.forEach((word, index) => {
