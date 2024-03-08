@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <title>Figures</title>
+</head>
+<body>
+    <div class="container">
+            <div class="menu" id="menu">
+                <button class="menu_item" id="start">Начать</button>
+                <button class="menu_item" onclick="levelSelection()">Выбрать уровень</button>
+                <a href="stats.html" class="menu_item" id="stats">Рейтинг</a>
+            </div>
+        <div class="levels_menu hidden" id="levels_menu">
+            <p class="levels_header">Выберите уровень:</p>
+            <div class="levels" id="levels">
+                <button class="level" id="level-1">Первый</button>
+                <button class="level" id="level-2">Второй</button>
+                <button class="level" id="level-3">Третий</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/menu.js"></script>
+</body>
+</html>

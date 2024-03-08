@@ -1,0 +1,60 @@
+:root{
+    /* Главная */
+    --coral-color: #DB6C4E;
+    --dark-coral-color: #C45539;
+    --light-coral-color: #E5815D;
+    --beige-color: #EDE0CD;
+    --text-color: #763525;
+    --tex-color-message: #3E2000;
+}
+
+@font-face {
+    font-family: neucha;
+    src: url(../fonts/neucha.ttf);
+}
+
+*{
+    font-family: neucha;
+    font-weight: 550;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.icon_home{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.icon_home:hover{
+    cursor: pointer;
+}
+
+p{
+    margin: 8% 0;
+}
+
+body{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+}

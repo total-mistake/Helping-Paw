@@ -76,6 +76,7 @@ function createBlock(str) {
     block.addEventListener('dragstart', function (event){
         draggableObj = event.target;
     })
+
     //Добавление созданного блока в левое меню
     sidebar.appendChild(block);
 }

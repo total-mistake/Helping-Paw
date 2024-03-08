@@ -1,0 +1,232 @@
+body{
+    background-image: url('../backgroundImages/menu.jpg');
+}
+
+#loginForm{
+    width: 30%;
+    height: 30%;
+    padding: 1em;
+    border: 2px solid white;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #f7cbb28e;
+    color: var(--tex-color-message);
+}
+
+p{
+    color: var(--tex-color-message);
+    text-align: center;
+}
+
+.login_item{
+    height: 40px;
+    width: 200px;
+    font-size: 0.8em;
+    border-radius: 30px;
+    border: 0;
+    padding: 0;
+    color: var(--tex-color-message);
+    background-color: white;
+}
+
+.login_item:hover, .anew_button:hover{
+    background-color: #df7c4a97;
+}
+
+.message{
+    margin: 15px 0;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+input{
+    text-align: center;
+}
+
+input::placeholder {
+    color: #f7cbb2;
+}
+
+input:focus {
+    outline: none;
+}
+
+#level{
+    min-width: 30%;
+    max-width: 60%;
+    background-color: #feede3c8;
+    border: 2px solid white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding: 20px;
+}
+
+#level_num{
+    margin: 10px 0;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+#rools{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-height: 100px;
+}
+
+#assignment{
+    margin: 10px 0;
+    font-size: 0.8em;
+}
+
+#timer{
+    display: flex;
+    position: absolute;
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.389);
+    font-size: 1.3em;
+    font-weight: 500;
+    height: 55px;
+    width: 55px;
+    border: 2px solid var(--text-color);
+    align-items: center;
+    justify-content: center;
+}
+
+#level_field{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.468);
+    border-radius: 30px;
+    /* width: 1000px;
+    height: 550px; */
+}
+
+
+
+#rools img{
+    height: 100px;
+    width: 100px;
+}
+
+.element{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+.element:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.element:disabled{
+    opacity: 0.3 !important;
+    cursor: not-allowed !important;
+}
+
+.anew{
+    display: flex;
+    padding: 20px;
+    width: 70%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.anew_button{
+    font-size: 0.8em;
+    border-radius: 30px;
+    border: 0;
+    padding: 10px 30px;
+    color: var(--tex-color-message);
+    background-color: white;
+    width: 30%;
+}
+
+#flowers-container{
+    position: relative;
+    height: 500px;
+    width: 1000px;
+    overflow: hidden;
+
+}
+
+#vase{
+    position: absolute;
+    height: 210px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flower{
+    height: 110px;
+    position: absolute; 
+    cursor: grab;
+}
+
+/* Анимации */
+.shaking{
+    animation: block-shaking 1s forwards;
+}
+/* Блок туда-сюда */
+@keyframes block-shaking {
+    0% { transform: translateX(0) }
+    10% { transform: translateX(3px) }
+    20% { transform: translateX(-3px) }
+    30% { transform: translateX(7px)}
+    40% { transform: translateX(-7px) }
+    50% { transform: translateX(7px) }
+    60% { transform: translateX(-7px) }
+    70% { transform: translateX(7px) }
+    80% { transform: translateX(-3px) }
+    90% { transform: translateX(3px)}
+    100% { transform: translateX(0) }
+}
+
+.flash {
+    animation: flash 0.5s ease 1;
+}
+/* Мигание таймера */
+@keyframes flash {
+    0%, 100% {
+      background-color: inherit;
+    }
+    50% {
+      background-color: rgba(209, 43, 43, 0.389);
+    }
+}
+
+.flicker{
+    animation-name: flicker;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flicker {
+    0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.3;
+      }
+}

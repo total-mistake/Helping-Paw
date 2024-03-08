@@ -1,0 +1,41 @@
+body{
+    background-image: url('../backgroundImages/stats.jpg');
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+    width: 50%;
+}
+
+.stats_header{
+    font-size: 1.8em;
+    color: var(--text-color);
+    margin: 3% 0;
+    font-weight: 800;
+}
+
+.rating{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.7em;
+}
+
+.user_name{
+    text-align: center;
+    border-top: 1px solid black;
+    font-size: 1em;
+    margin: 0;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.points{
+    margin: 5px 0;
+    font-size: 0.8em;
+}

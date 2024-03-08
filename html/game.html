@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/game.css" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <title>Figures</title>
+    <style id="animation_styles"></style>
+</head>
+<body>
+    <header class="header">
+        <a href="menu.html"><img class="icon_home"></a>
+    </header>
+    <!-- Авторизация -->
+    <form id="loginForm" >
+        <p class="message">Введите имя игрока, чтобы ваша статистика сохранилась!</p>
+        <input class="login_item" type="text" id="user_name" placeholder="Имя игрока">
+        <button class="login_item" id="continue" type="submit">Продолжить</button>
+    </form>
+    <div id="level" class="hidden">
+        <!-- Основные элементы уровня -->
+        <div id="timer"></div>
+        <p id="level_num"></p>
+        <div id="rools">
+            <p id="assignment"></p>
+            <img id="exampleImg" class="hidden">
+        </div>
+        <div id="level_field"></div>
+        <!-- После завершения уровня -->
+        <div class="anew hidden" id="anew">
+            <button class="anew_button" id="no">Нет</button>
+            <button class="anew_button" onclick="startGame()">Да</button>
+        </div>
+    </div>
+    <script src="../js/consts.js"></script>
+    <script src="../js/game.js"></script>
+</body>
+</html>
