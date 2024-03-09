@@ -79,7 +79,7 @@ function firstLevel() {
                     break;
                 case 1:
                     taskSubtype = animalTypes2[random(0, animalTypes2.length - 1)];
-                    assignment.textContent = `Найди всех животных, у которых ${taskSubtype} ноги.`;
+                    assignment.textContent = `Найди всех животных, у которых ${taskSubtype} лапы/ноги.`;
                     break;
                 case 2:
                     taskSubtype = backgroundColors[random(0, backgroundColors.length - 1)].name;
