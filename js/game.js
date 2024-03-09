@@ -603,7 +603,7 @@ function stopTimer() {
 function gameOver() {
     level_num.textContent = "Ты проиграл"
     assignment.textContent = "Хочешь попробовать заново?";
-    clearInterval(updateInterval);
+    stopTimer();
     clearField();
     $('animation_styles').innerHTML = '';
     exampleImg.classList.add('hidden');
