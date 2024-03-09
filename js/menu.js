@@ -20,7 +20,14 @@ start.addEventListener('click', ()=>{
     window.location.href = 'game.html?level=0';
 })
 
-
+// Добавляем обработчик события для клавиши Enter
+document.body.addEventListener('keydown', function(event) {
+    // Проверяем, что нажата клавиша Enter
+    if (event.code == "Enter") {
+        // Вызываем клик на кнопке "Начать"
+        start.click();
+    }
+});
 
 
     

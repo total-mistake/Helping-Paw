@@ -28,6 +28,15 @@ loginForm.addEventListener('submit', function (event) {
     }
 });
 
+// Добавляем обработчик события для клавиши Enter
+document.body.addEventListener('keydown', function(event) {
+    // Проверяем, что нажата клавиша Enter
+    if (event.code == "Enter") {
+        // Вызываем клик на кнопке "Начать"
+        $('continue').click();
+    }
+});
+
 function startGame() {
     //Алгоритм в зависимости от выбранного уровня
     switch (factLevel) {
