@@ -7,7 +7,7 @@ function showRating() {
     const storedAllUsersStats = localStorage.getItem('UsersStats');
     let allUsersStats = JSON.parse(storedAllUsersStats) || [];
     if (allUsersStats.length > 0) {
-        for (let i = 0; i < 4; i++) {
+        for (let i = 0; i < 5; i++) {
             const currentUser = allUsersStats[i];
             document.getElementById('rating').insertAdjacentHTML('beforeend',
                 `<div class="user">
