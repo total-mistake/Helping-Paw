@@ -130,7 +130,8 @@ function firstLevel() {
                         element.classList.remove('flicker');
                         numOfCorrectItems--;
                         element.disabled = true;
-                        element.style.opacity = 0.1;
+                        element.classList.add('disabled');
+                        // element.style.opacity = 0.1;
                     } else { makeMistake()}
                     if (numOfCorrectItems == 0) {
                         clearField();
@@ -140,13 +141,13 @@ function firstLevel() {
                 });
             });
 
-            delayCorrection(5);
+            delayCorrection(3);
             //Задаем задержку перед выводом содержания уровня
             setTimeout(() => {
                 timer.classList.remove('hidden');
                 level_field.classList.remove('hidden');
                 generationField(arrayOfElements);
-            }, 5000);
+            }, 3000);
         } else {
             stopTimer();
             let points = timeRemaining;
@@ -163,6 +164,8 @@ function firstLevel() {
 }
 
 function secondLevel() {
+    clearField();
+    clearInterval(updateInterval);
     anew.classList.add('hidden');
     showStyle();
     level_num.textContent = `Уровень 2`;
@@ -187,25 +190,36 @@ function secondLevel() {
 
             arrayOfElements.forEach(element => {
                 element.addEventListener('click', () => {
-                    if (element.path == correctImg) {
+                    if (element.classList.contains('correct')) {
                         numOfClicks++;
                     } else { makeMistake()}
                     if (numOfClicks == 3) {
-                        clearField();
-                        levelIndex++;
+                        timer.classList.add('hidden');
+                        delayCorrection(3);
                         clearInterval(updateInterval);
-                        nextLevelGeneration();
+                        // Выделение верного элемента зеленым фоном
+                        arrayOfElements.forEach(element => {
+                            if (element.classList.contains('correct')) {
+                                element.style.backgroundColor = 'rgba(60, 208, 110, 0.314)';
+                            }
+                        });
+                        setTimeout(() => {
+                            // Очистка поля и переход к следующему уровню
+                            clearField();
+                            levelIndex++;
+                            nextLevelGeneration();
+                        }, 3000); // Задержка в 3 секунды
                     }
                 });
             });
 
-            delayCorrection(5);
+            delayCorrection(3);
             //Задаем задержку перед выводом содержания уровня
             setTimeout(() => {
                 timer.classList.remove('hidden');
                 level_field.classList.remove('hidden');
                 generationField(arrayOfElements);
-            }, 5000);
+            }, 3000);
 
             // Функция для обновления расположения элементов каждые, например, 3 секунды
             const updateElements = () => {
@@ -345,6 +359,8 @@ function generateFlowers(numFlowers, animationMinSpeed, animationMaxSpeed) {
 }
 
 function startDragging(event) {
+    event.target.style.border = "2px solid var(--text-color)";
+    event.target.style.borderRadius = "45%";
     // Устанавливаем данные, которые будут переданы при начале перетаскивания
     event.dataTransfer.setData('text/plain', event.target.id);
     event.dataTransfer.setDragImage(event.target, 0, 0); // Это предотвратит создание копии элемента
@@ -359,6 +375,8 @@ function dropFlower(event) {
 
     // Если цветок найден, перемещаем его в место бросания
     if (flower) {
+        flower.style.border = "none";
+
         const flowersContainer = $('flowers-container');
         const offsetX = event.clientX - flowersContainer.getBoundingClientRect().left;
         const offsetY = event.clientY - flowersContainer.getBoundingClientRect().top;
@@ -495,6 +513,7 @@ function creatingArrayOfElementslvl2(wrongElements, numOfCorrectElement, correct
     for(let i = 0; i < numOfCorrectElement; i++) {
         const newElement = document.createElement('div');
         newElement.classList.add('element');
+        newElement.classList.add('correct');
         newElement.style.backgroundColor = '#F5E0CF';
         const newImg = document.createElement('img');
         let pathImg = correctElement;
@@ -601,15 +620,34 @@ function stopTimer() {
 
 // Функция, вызываемая при завершении времени
 function gameOver() {
+    timer.classList.add('hidden');
+    if(factLevel == 2) {
+        clearInterval(updateInterval);
+        level_field.querySelectorAll('*').forEach(element => {
+            if (element.classList.contains('correct')) {
+                element.style.backgroundColor = 'rgba(60, 208, 110, 0.314)';
+            }
+        });
+        setTimeout(() => {
+            level_num.textContent = "Ты проиграл"
+            assignment.textContent = "Хочешь попробовать заново?";
+            stopTimer();
+            clearField();
+            $('animation_styles').innerHTML = '';
+            exampleImg.classList.add('hidden');
+            level_field.classList.add('hidden');
+            anew.classList.remove('hidden');
+        }, 3000)
+    } else {
     level_num.textContent = "Ты проиграл"
     assignment.textContent = "Хочешь попробовать заново?";
     stopTimer();
     clearField();
     $('animation_styles').innerHTML = '';
     exampleImg.classList.add('hidden');
-    timer.classList.add('hidden');
     level_field.classList.add('hidden');
     anew.classList.remove('hidden');
+    }
 }
 
 //Функция сортировки массива по убыванию суммы очков
